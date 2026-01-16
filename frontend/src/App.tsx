@@ -3,7 +3,7 @@ import axios from 'axios';
 import clsx from 'clsx';
 import { Tutorial, TutorialStep } from './Tutorial';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 type Language = 'en' | 'pt';
 
